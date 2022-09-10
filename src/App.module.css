@@ -1,0 +1,15 @@
+.wrapper {
+    max-width: 70rem;
+    margin: 2rem auto;
+    padding: 0 1rem; /* 1rem = 16px porém refere-se a um padrão de configuração do dispositivo */
+    display: grid; /* assim é possível customizar o tamanho de cada coluna */
+    grid-template-columns: 256px 1fr; /* 1fr -> flexível, ocupa o resto */
+    gap: 2rem; /* espaço entre as colunas */
+    align-items: flex-start; /* para não alongar os elementos */
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+    }
+}
